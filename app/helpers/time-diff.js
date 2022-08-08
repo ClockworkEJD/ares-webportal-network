@@ -3,8 +3,8 @@ import dayjs from 'dayjs';
 
 export function timeDiff(params, hash) {
     let time = `${hash.time}`;
-    let original = dayjs(time); // moment(time);
-    let diff = 0 - original.diff(dayjs(), 'minutes'); // original.diff(moment(), 'minutes');
+    let original = dayjs(time);
+    let diff = 0 - original.diff(dayjs(), 'minutes');
     
     if (diff > 60*24) {
       return `${Math.round(diff / (60 * 24))}d`;
