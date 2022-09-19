@@ -9,6 +9,6 @@ export default Component.extend({
   }),
 
   showDatingMatchesTab: computed('dating.matches', function() {
-    return Object.keys(this.dating.matches).length > 0;
+    return this.dating.matches && Object.keys(this.dating.matches).length > 0;
   }),
 });
