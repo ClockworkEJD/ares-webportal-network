@@ -13,7 +13,7 @@ export default Mixin.create({
 
   isCoder: reads('session.data.authenticated.is_coder'),
 
-  isWikiMgr: reads('session.data.authenticated.is_wiki_mgr'),
+  isThemeMgr: reads('session.data.authenticated.is_theme_mgr'),
 
   canSwipe: reads('session.data.authenticated.can_swipe'),
 
